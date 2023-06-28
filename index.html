@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <div style="display: flex; position: absolute; right: 50px; align-items: center;">
+        <input type="text" placeholder="Search.." />
+        <button id="btn">Submit</button>
+      </div>
+    </div>
+    <!-- <div class="center">
+    </div> -->
+    <!-- <div id="cityname"></div>
+    <div id="temp"></div>
+    <div id="humi"></div>
+    <div id="cloud_pct"></div>
+    <div id="feels_like"></div>
+    <div id="max_temp"></div>
+    <div id="min_temp"></div>
+    <div id="sunrise"></div>
+    <div id="sunset"></div>
+    <div id="sunset"></div>
+    <div id="wind_degrees"></div>
+    <div id="wind_speed"></div> -->
+
+    <div class="card">
+      <h2 id="cityname"></h2>
+      <h3>
+        <span
+          >Wind Speed
+          <p id="wind_speed"></p>
+          <span class="dot"></span> Cloud PCT
+          <p id="cloud_pct">0%</p></span
+        >
+      </h3>
+      <h1 id="temp">23°</h1>
+      <div class="sky">
+        <div class="sun"></div>
+        <div class="cloud">
+          <div class="circle-small"></div>
+          <div class="circle-tall"></div>
+          <div class="circle-medium"></div>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <td>Feels like</td>
+          <td>Humidity</td>
+          <td>Min temp</td>
+          <td>Max temp</td>
+          <td>Wind degrees</td>
+        </tr>
+        <tr>
+          <td id="feels_like"></td>
+          <td id="humi"></td>
+          <td id="min_temp"></td>
+          <td id="max_temp"></td>
+          <td id="wind_degrees"></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
